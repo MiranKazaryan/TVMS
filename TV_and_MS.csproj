@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D81F40F-68EC-4ACA-A0D8-AEE31AD00FB9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TV_and_MS</RootNamespace>
+    <AssemblyName>TV_and_MS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Generators, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Диплом\Projects\Generators\Generators\bin\Debug\Generators.dll</HintPath>
+    </Reference>
+    <Reference Include="info.lundin.math">
+      <HintPath>D:\чр\info.lundin.math.dll</HintPath>
+    </Reference>
+    <Reference Include="MathParser">
+      <HintPath>D:\чр\MathParser\bin\Debug\MathParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTZ.Designer.cs">
+      <DependentUpon>AddTZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_TestSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_TestSet.Designer.cs">
+      <DependentUpon>Add_TestSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autorization.Designer.cs">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangeTZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangeTZ.Designer.cs">
+      <DependentUpon>ChangeTZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Control_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control_test.Designer.cs">
+      <DependentUpon>Control_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DelTZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelTZ.Designer.cs">
+      <DependentUpon>DelTZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTZ.Designer.cs">
+      <DependentUpon>EditTZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eduTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eduTest.Designer.cs">
+      <DependentUpon>eduTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Help.Designer.cs">
+      <DependentUpon>Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lecture.Designer.cs">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recovery_pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recovery_pass.Designer.cs">
+      <DependentUpon>Recovery_pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select_test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select_test.Designer.cs">
+      <DependentUpon>Select_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistic.Designer.cs">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTZ.resx">
+      <DependentUpon>AddTZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_TestSet.resx">
+      <DependentUpon>Add_TestSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autorization.resx">
+      <DependentUpon>Autorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeTZ.resx">
+      <DependentUpon>ChangeTZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control_test.resx">
+      <DependentUpon>Control_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelTZ.resx">
+      <DependentUpon>DelTZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTZ.resx">
+      <DependentUpon>EditTZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eduTest.resx">
+      <DependentUpon>eduTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Help.resx">
+      <DependentUpon>Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lecture.resx">
+      <DependentUpon>Lecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Recovery_pass.resx">
+      <DependentUpon>Recovery_pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select_test.resx">
+      <DependentUpon>Select_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistic.resx">
+      <DependentUpon>Statistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
